@@ -43,6 +43,20 @@ public class MealService {
     public List<Meal> getAvailableMeals() {
         return mealRepository.findByIsAvailable(true); // Custom query for available meals
     }
+
+    public List<Meal> getPescatarianMeals() {
+        return mealRepository.findByType("pescatarian");
+    }
+    
+    public List<Meal> getVegetarianMeals() {
+        return mealRepository.findByType("vegetarian");
+    }
+
+    public List<Meal> getVeganMeals() {
+        return mealRepository.findByType("vegan");
+    }
+    
+    
 }
     
 

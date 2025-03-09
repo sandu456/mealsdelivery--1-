@@ -52,6 +52,22 @@ public class MealController {
 
     }
 
+    @GetMapping("/get/pescatarian")
+public List<Meal> getPescatarianMeals() {
+    return mealService.getPescatarianMeals();
+}
+
+@GetMapping("/get/vegetarian")
+public List<Meal> getVegetarianMeals() {
+    return mealService.getVegetarianMeals();
+}
+
+@GetMapping("/get/vegan")
+public List<Meal> getVeganMeals() {
+    return mealService.getVeganMeals();
+}
+
+
 
 }
 

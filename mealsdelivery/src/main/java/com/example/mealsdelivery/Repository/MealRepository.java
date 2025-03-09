@@ -10,5 +10,7 @@ import com.example.mealsdelivery.models.Meal;
     public interface MealRepository extends MongoRepository<Meal, String> {
 
         List<Meal> findByIsAvailable(boolean b);
+
+        List<Meal> findByType(String string);
 }
     

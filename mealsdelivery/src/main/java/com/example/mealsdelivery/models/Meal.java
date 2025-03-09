@@ -13,6 +13,7 @@ public class Meal {
     private String description;
     private double price;
     private boolean isAvailable;
+    private String type;
 
     public String getId(){return id;}
     public void setId(String id){
@@ -43,6 +44,10 @@ public class Meal {
         this.isAvailable=isAvailable;
     }
 
+    public String getType(){return type;}
+    public void setType(String type){
+        this.type=type;
+    }
 
 
 
